@@ -13,7 +13,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam)
     return CallNextHookEx(NULL, nCode, wParam, lParam);
 }
 
-int main(void)
+int main()
 {
     HHOOK hook = SetWindowsHookEx(
         WH_KEYBOARD_LL,         
